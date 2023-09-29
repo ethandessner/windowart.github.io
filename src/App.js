@@ -25,6 +25,11 @@ const Container = styled.div`
   align-items: center;
   margin: 20%;
 `;
+const ButtonContainer = styled.div`
+  justify-content: center;
+  align-items: center;
+  display: flex;
+`;
 
 const initialState = {
   name: "",
@@ -43,7 +48,7 @@ function App() {
   // THIS IS SENDING A MESSAGE
   const [state, setState] = useState(initialState);
   const [error, setError] = useState("");
-  const userCollectionRef = collection(db, "contactdata");
+  const userCollectionRef = collection(db, "submissions");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -110,9 +115,11 @@ function App() {
                 onChange={(e) => setImg(e.target.files[0])}
                 required
               />
-              <StyledButton type="submit" onClick={handleClick}>
-                Send Message and Upload an Image!
-              </StyledButton>
+              <ButtonContainer>
+                <StyledButton type="submit" onClick={handleClick}>
+                  Upload
+                </StyledButton>
+              </ButtonContainer>
             </StyledForm>
           </FormWrapper>
         </FormContainer>
