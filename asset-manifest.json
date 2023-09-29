@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/windowart.github.io/static/css/main.1de87fb9.css",
+    "main.js": "/windowart.github.io/static/js/main.1085ecdc.js",
+    "index.html": "/windowart.github.io/index.html",
+    "main.1de87fb9.css.map": "/windowart.github.io/static/css/main.1de87fb9.css.map",
+    "main.1085ecdc.js.map": "/windowart.github.io/static/js/main.1085ecdc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1de87fb9.css",
+    "static/js/main.1085ecdc.js"
+  ]
+}
